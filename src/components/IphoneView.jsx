@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {PlusIcon} from '../assets/PlusIcon'
 import { IphoneScene } from '../scenes/IphoneScene';
 import { Colors } from './Colors';
@@ -6,6 +6,7 @@ import { Almacenamiento } from './Almacenamiento';
 
 
 export const IphoneView = () => {
+  const [colorBack,setColorBack] = useState('0xE72424')
   return (
       <>
       <div className="container w-11/12 m-auto my-8 px-6">
@@ -20,12 +21,12 @@ export const IphoneView = () => {
         </div>
         <div className="flex mt-10 gap-10">
           <div className="w-9/12 h-[35rem]">
-            <IphoneScene />
+            <IphoneScene colorBack={colorBack} />
           </div>
           <div className="w-3/12 flex items-center px-2">
             <div >
               <p className="text-2xl font-semibold">Acabado. <span className="text-gray-400">Elige tu favorito.</span></p>
-              <Colors/>
+              <Colors setColorBack={setColorBack} />
               <p className="block py-4 text-xs mt-5 text-gray-400">
                 Una parte de lo recaudado con la venta de un iPhone 12 (PRODUCT)RED se destinará al Fondo Mundial frente al COVID-19. Nota a pie de página<sup>◊◊◊</sup> 
               </p>

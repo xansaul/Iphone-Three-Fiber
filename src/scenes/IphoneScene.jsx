@@ -3,7 +3,8 @@ import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import {Iphone} from '../modelsCode/Iphone'
 
-export const IphoneScene = () => {
+export const IphoneScene = ({colorBack}) => {
+  
   return (
     <Canvas className="w-full h-full bg-slate-100 mt-5 rounded-3xl"  >
       <directionalLight position={[0, 8, 10]} intensity={10} color={"#C9E5FF"}/>
@@ -14,10 +15,10 @@ export const IphoneScene = () => {
       <pointLight position={[0,50,-500]} intensity={.001}/>
       <pointLight position={[0,-.5,10]} intensity={.01}/>
       
-      <spotLight position={[0,3,-1]} intensity={.1} />
+      <spotLight position={[0,3.3,-1]} intensity={.1} />
       <spotLight position={[0,-4,-1]} intensity={.1}/>
 
-      <Iphone position={[0,-3,0]} scale={.06}  />
+      <Iphone position={[0,-3,0]} scale={.06} colorBack={colorBack}  />
       <OrbitControls
         makeDefault 
         enableZoom={false} 

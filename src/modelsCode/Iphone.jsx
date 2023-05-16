@@ -1,10 +1,14 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 import model from '../models3D/iphone12.glb'
 
 export function Iphone(props) {
   const { nodes, materials } = useGLTF(model);
+  useEffect(()=>{
+    console.log(props)
+    materials.Body.color.setHex(props.colorBack);
+  },[props.colorBack])
   return (
     <group {...props} dispose={null}>
       <group position={[0, -2.59, 2.42]}>
@@ -202,11 +206,13 @@ export function Iphone(props) {
               geometry={nodes.CameraModule002_MicrophoneSpeaker_0.geometry}
               material={materials.MicrophoneSpeaker}
             />
-            <mesh
+            {/* sa */}
+            <mesh 
               castShadow
               receiveShadow
               geometry={nodes.iPhone12_Pro_Body_0.geometry}
               material={materials.Body}
+              
             />
             <mesh
               castShadow
