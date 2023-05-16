@@ -24,10 +24,10 @@ export const IphoneView = () => {
           </div>
           <div className="w-3/12 flex items-center px-2">
             <div >
-              <p className="text-2xl font-semibold">Acabado. <span className="text-gray-600">Elige tu favorito.</span></p>
+              <p className="text-2xl font-semibold">Acabado. <span className="text-gray-400">Elige tu favorito.</span></p>
               <Colors/>
-              <p className="block py-4 text-xs mt-5 text-gray-600">
-                Una parte de lo recaudado con la venta de un iPhone 12 (PRODUCT)RED se destinará al Fondo Mundial frente al COVID-19. Nota a pie de página◊◊◊
+              <p className="block py-4 text-xs mt-5 text-gray-400">
+                Una parte de lo recaudado con la venta de un iPhone 12 (PRODUCT)RED se destinará al Fondo Mundial frente al COVID-19. Nota a pie de página<sup>◊◊◊</sup> 
               </p>
               <Almacenamiento />
               </div>
