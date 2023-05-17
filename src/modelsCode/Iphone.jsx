@@ -6,7 +6,6 @@ import model from '../models3D/iphone12.glb'
 export function Iphone(props) {
   const { nodes, materials } = useGLTF(model);
   useEffect(()=>{
-    console.log(props)
     materials.Body.color.setHex(props.colorBack);
   },[props.colorBack])
   return (
