@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0f26809.css",
+    "main.js": "/static/js/main.f76864a3.js",
+    "static/js/787.6b32beb8.chunk.js": "/static/js/787.6b32beb8.chunk.js",
+    "static/media/iphone12.glb": "/static/media/iphone12.8674ca5b8c8afe81506d.glb",
+    "index.html": "/index.html",
+    "main.a0f26809.css.map": "/static/css/main.a0f26809.css.map",
+    "main.f76864a3.js.map": "/static/js/main.f76864a3.js.map",
+    "787.6b32beb8.chunk.js.map": "/static/js/787.6b32beb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0f26809.css",
+    "static/js/main.f76864a3.js"
+  ]
+}
