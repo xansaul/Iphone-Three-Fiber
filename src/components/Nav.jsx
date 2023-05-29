@@ -5,7 +5,7 @@ import { BagIcon } from '../assets/BagIcon'
 export const Nav = () => {
   return (
     <nav>
-      <ul className='flex justify-center gap-10 text-xs p-4 text-gray-600 items-center font-semibold'>
+      <ul className='flex justify-center gap-10 text-xs p-4 text-gray-600 items-center font-semibold flex-wrap'>
         <li>Tienda</li>
         <li>Mac</li>
         <li>iPad</li>
