@@ -16,7 +16,7 @@ const colors = [
     classColor:"bg-gray-700 shadow-black"
   },
   {
-    color:"0xEAE8E8",
+    color:"0xD2D2D2",
     classColor:"bg-white shadow-slate-200"
   },
   {
