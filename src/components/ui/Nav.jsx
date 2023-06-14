@@ -1,6 +1,6 @@
 import React from 'react'
-import { SearchIcon } from '../assets/SearchIcon'
-import { BagIcon } from '../assets/BagIcon'
+import { SearchIcon } from '../../assets/SearchIcon'
+import { BagIcon } from '../../assets/BagIcon'
 
 export const Nav = () => {
   return (

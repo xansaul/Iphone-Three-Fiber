@@ -1,7 +1,6 @@
 import React from 'react'
 import { Color } from './Color'
 
-
 const colors = [
   {
     color:"0xFC3434",
@@ -30,17 +29,15 @@ const colors = [
 ]
 
 
-export const Colors = ({setColorBack,colorBack}) => {
-  const handleClick = (color) => {
-    setColorBack(color)
-  }
+export const Colors = () => {
+  
   return (
     <>
       <p className="text-xl font-semibold my-5">Color</p>
       <div className="flex gap-5">
         {
-          colors.map((color)=>(
-            <Color key={color.color} {...color} handleClick={handleClick} colorSelected={colorBack} />
+          colors.map((colorData)=>(
+            <Color key={colorData.color} {...colorData}  />
           ))
         }
       </div>

@@ -1,13 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 import model from '../models3D/iphone12.glb'
+import { ProductContext } from "../contexts/ProductContext";
 
 export function Iphone(props) {
   const { nodes, materials } = useGLTF(model);
+  const { colorState } = useContext(ProductContext)
   useEffect(()=>{
-    materials.Body.color.setHex(props.colorBack);
-  },[props.colorBack])
+    materials.Body.color.setHex(colorState);
+  },[colorState])
   return (
     <group {...props} dispose={null}>
       <group position={[0, -2.59, 2.42]}>

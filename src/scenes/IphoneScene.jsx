@@ -21,11 +21,10 @@ const EnvironIllumination = () => {
 }
 
 
-export const IphoneScene = ({colorBack}) => {
-  
+export const IphoneScene = () => {
   return (
     <Canvas 
-      className="w-full h-full bg-gray-100 mt-5 rounded-3xl"
+      className="w-full h-full bg-slate-100 mt-5 rounded-3xl"
       gl={{
         outputColorSpace: THREE.SRGBColorSpace,
         toneMapping: THREE.ACESFilmicToneMapping,
@@ -40,7 +39,7 @@ export const IphoneScene = ({colorBack}) => {
       <spotLight position={[0,-4,-2]} intensity={.05}/>
 
       {/* 3D model and controls */}
-      <Iphone position={[0,-3,0]} scale={.06} colorBack={colorBack}   />
+      <Iphone position={[0,-3,0]} scale={.06} />
       <OrbitControls
         makeDefault 
         enableZoom={false} 

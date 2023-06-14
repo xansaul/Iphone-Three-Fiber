@@ -1,7 +1,7 @@
 
-import { MSI } from "./components/MSI";
-import { IphoneView } from "./components/IphoneView";
-import { Nav } from "./components/Nav";
+import { MSI } from "./components/ui/MSI";
+import { IphonePage } from "./components/pages/IphonePage";
+import { Nav } from "./components/ui/Nav";
 
 
 
@@ -12,7 +12,7 @@ function App() {
     <>
     <Nav />
     <MSI/>
-    <IphoneView/>
+    <IphonePage/>
     </>
   );
 }
